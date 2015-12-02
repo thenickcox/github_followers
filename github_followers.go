@@ -35,7 +35,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	for user := range users {
-		fmt.Println(users[user].Login)
+	for _, user := range users {
+		fmt.Println(user.Login)
 	}
 }
